@@ -9,7 +9,7 @@ body:
         Thanks for reporting issues of MagiskOnWSALocal!
 
         To make it easier for us to help you please enter detailed information below.
-        
+
         感谢给 MagiskOnWSALocal 汇报问题！
         为了使我们更好地帮助你，请提供以下信息。
         为了防止重复汇报，标题请务必使用英文。
@@ -19,7 +19,7 @@ body:
       value: |
         1. 
         2. 
-        3. 
+        3.
     validations:
       required: true
   - type: textarea
@@ -37,7 +37,7 @@ body:
   - type: input
     attributes:
       label: MagiskOnWSALocal commit full SHA/MagiskOnWSALocal 提交的完整哈希
-      description:  Don't use 'latest'. Copy and paste full commit SHA, otherwise your issue will be closed./不要填用“最新”。复制并粘贴完整 commit SHA，不然 issue 会被关闭。
+      description: Don't use 'latest'. Copy and paste full commit SHA, otherwise your issue will be closed./不要填用“最新”。复制并粘贴完整 commit SHA，不然 issue 会被关闭。
     validations:
       required: true
   - type: textarea
@@ -79,9 +79,9 @@ body:
       description: Please copy and paste the error or submit a screenshot. Without log, the issue will be closed. /请复制粘贴错误或提交截图。无日志提交会被关闭。
       value: |
         <details>
-        
+
         [//]: <> (Don't modify above)
-        
+
         ```
         # Replace this line with the log / 将此行用日志替换
         ```

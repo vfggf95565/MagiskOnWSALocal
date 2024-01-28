@@ -8,11 +8,11 @@
 
   The following dependencies are required:
 
-  | DistrOS             |                                                         |            |              |                    |               |              |
-  |:-------------------:|---------------------------------------------------------|------------|--------------|--------------------|---------------|--------------|
-  | Debian              | `lzip patchelf e2fsprogs python3 aria2 attr unzip sudo` | `whiptail` | `qemu-utils` | `python3-venv`     | `python3-pip` | `p7zip-full` |
-  | openSUSE Tumbleweed | Same as above                                           | `dialog`   | `qemu-tools` | `python3-venvctrl` | Same as above                |
-  | Arch                | Same as Debian                                          | `libnewt`  | `qemu-img`   |  Same as Debian    | `python-pip`  | `p7zip`      |
+  |       DistrOS       |                                                         |            |              |                    |               |              |
+  | :-----------------: | ------------------------------------------------------- | ---------- | ------------ | ------------------ | ------------- | ------------ |
+  |       Debian        | `lzip patchelf e2fsprogs python3 aria2 attr unzip sudo` | `whiptail` | `qemu-utils` | `python3-venv`     | `python3-pip` | `p7zip-full` |
+  | openSUSE Tumbleweed | Same as above                                           | `dialog`   | `qemu-tools` | `python3-venvctrl` | Same as above |
+  |        Arch         | Same as Debian                                          | `libnewt`  | `qemu-img`   | Same as Debian     | `python-pip`  | `p7zip`      |
 
   The python3 library `requests` is used.
 
@@ -64,9 +64,11 @@
 5. Select the WSA version and its architecture (mostly x64).
 6. Select the version of Magisk.
 7. Choose which brand of GApps you want to install:
+
    - MindTheGapps
 
      There is no other variant we can choose.
+
 8. Select the root solution (none means no root).
 9. If you are running the script for the first time, it will take some time to complete. After the script completes, two new folders named `output` and `download` will be generated in the `MagiskOnWSALocal` folder. Go to the `output` folder. While running the `./run.sh` script in the step 3, if you selected `Yes` for `Do you want to compress the output?` then in `output` folder you will see a compressed file called `WSA-with-magisk-stable-MindTheGapps_2207.40000.8.0_x64_Release-Nightly`or else there will be folder with the `WSA-with-magisk-stable-MindTheGapps_2207.40000.8.0_x64_Release-Nightly`. If there is a folder open it and skip to step 10. NOTE: The name of compressed file or the folder generated in the `output` folder may be different for you. It will be dependent on the choices made when executing `./run.sh`.
 10. Extract the compressed file and open the folder created after the extraction of the file.
@@ -74,11 +76,11 @@
     - If you previously have a MagiskOnWSA installation, it will automatically uninstall the previous one while **preserving all user data** and install the new one, so don't worry about your data.
     - If you have an official WSA installation, you should uninstall it first. (In case you want to preserve your data, you can backup `%LOCALAPPDATA%\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\userdata.vhdx` before uninstallation and restore it after installation.)
     - If the popup windows disappear **without asking administrative permission** and WSA is not installed successfully, you should manually run `Install.ps1` as Administrator:
-        1. Press `Win+x` and select `Windows Terminal (Admin)`.
-        2. Input `cd "{X:\path\to\your\extracted\folder}"` and press `enter`, and remember to replace `{X:\path\to\your\extracted\folder}` including the `{}`, for example `cd "D:\wsa"`
-        3. Input `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` and press `Enter`.
-        4. The script will run and WSA will be installed.
-        5. If this workaround does not work, your PC is not supported for WSA.
+      1. Press `Win+x` and select `Windows Terminal (Admin)`.
+      2. Input `cd "{X:\path\to\your\extracted\folder}"` and press `enter`, and remember to replace `{X:\path\to\your\extracted\folder}` including the `{}`, for example `cd "D:\wsa"`
+      3. Input `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` and press `Enter`.
+      4. The script will run and WSA will be installed.
+      5. If this workaround does not work, your PC is not supported for WSA.
 12. Magisk/Play Store will be launched. Enjoy by installing LSPosed-Zygisk with Zygisk enabled or Riru and LSPosed-Riru.
 
 ---
@@ -95,11 +97,11 @@
 
   1. Update build scripts:
 
-      ```bash
-      git pull
-      ```
+     ```bash
+     git pull
+     ```
 
-      For more usage of git, referred to <https://git-scm.com/book>
+     For more usage of git, referred to <https://git-scm.com/book>
 
   2. Rerun the script, replace the content of your previous installation and rerun `Install.ps1`. Don't worry, your data will be preserved.
 

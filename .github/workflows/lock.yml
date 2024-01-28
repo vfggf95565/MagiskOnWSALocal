@@ -1,4 +1,4 @@
-name: 'Lock Threads'
+name: "Lock Threads"
 
 on:
   issues:
@@ -20,6 +20,6 @@ jobs:
     steps:
       - uses: dessant/lock-threads@v4
         with:
-          exclude-any-issue-labels: 'do-not-autoclose'
-          exclude-any-pr-labels: 'do-not-autoclose'
-          include-any-pr-labels: 'spam'
+          exclude-any-issue-labels: "do-not-autoclose"
+          exclude-any-pr-labels: "do-not-autoclose"
+          include-any-pr-labels: "spam"
